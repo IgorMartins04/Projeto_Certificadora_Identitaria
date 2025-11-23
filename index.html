@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTFPR - Câmpus Cornélio Procópio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/utfprlogo.jpeg" alt="Logo" height="50">
+                <span>Câmpus Cornélio Procópio</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tour">Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vestibular">Vestibular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Fale Conosco</a></li>
+                    
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn-nav-dark text-decoration-none" href="register/login.html">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section" style="background-image: url('assets/UTFfundo.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark mb-4 px-4 py-2 rounded-pill fw-bold shadow-sm">Ensino Público e Gratuito</span>
+                    <h1 class="display-3 fw-bold mb-4 text-white">Excelência em <br><span class="text-amarelo">Tecnologia e Inovação</span></h1>
+                    <p class="lead mb-5 text-white-50 fs-4">
+                        Descubra um ambiente universitário completo, com ensino de qualidade e projetos que transformam o futuro.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#tour" class="btn btn-warning btn-lg fw-bold px-5 py-3 rounded-pill shadow">Tour pelo Campus</a>
+                        
+                        <a href="#cursos" class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow text-dark">Cursos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="tour" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tour pelo Campus</h2>
+                <p class="text-muted lead">Uma infraestrutura moderna preparada para o seu desenvolvimento.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=Biblioteca" class="card-img-top" alt="Biblioteca">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Biblioteca Universitária</h5>
+                            <p class="text-muted">Acervo físico e digital completo, com espaços climatizados para estudo individual e em grupo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=R.U." class="card-img-top" alt="Restaurante">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Restaurante Universitário</h5>
+                            <p class="text-muted">Alimentação balanceada e acessível para todos os alunos, sendo o principal ponto de encontro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=Laboratórios" class="card-img-top" alt="Laboratórios">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Laboratórios Avançados</h5>
+                            <p class="text-muted">Equipamentos de ponta para aulas práticas de computação, elétrica, mecânica e física.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=Blocos+de+Aula" class="card-img-top" alt="Blocos">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Blocos Didáticos</h5>
+                            <p class="text-muted">Salas de aula amplas, arejadas e equipadas com recursos multimídia para o melhor aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=Esportes" class="card-img-top" alt="Esportes">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Complexo Esportivo</h5>
+                            <p class="text-muted">Ginásio poliesportivo e quadras externas para atividades físicas, treinos e lazer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <div class="card-img-wrapper">
+                            <img src="https://placehold.co/600x400?text=Convivência" class="card-img-top" alt="Convivência">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Área de Convivência</h5>
+                            <p class="text-muted">Jardins e espaços abertos ideais para descanso, leitura e integração entre os estudantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="section-padding bg-cinza">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Cursos</h2>
+                <p class="text-muted lead">Graduações de excelência reconhecidas pelo MEC.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-code-slash"></i></div>
+                                <span class="badge bg-primary badge-custom">4 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Engenharia de Software</h4>
+                            <p class="text-muted mb-4">Especialista em todo o ciclo de vida do software, desde a arquitetura até a qualidade e gestão.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-de-software" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-cpu"></i></div>
+                                <span class="badge bg-primary badge-custom">5 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Engenharia de Computação</h4>
+                            <p class="text-muted mb-4">Integração total entre hardware e software, robótica e sistemas embarcados.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-de-computacao" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-gear-wide-connected"></i></div>
+                                <span class="badge bg-primary badge-custom">5 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Controle e Automação</h4>
+                            <p class="text-muted mb-4">Automação industrial, controle de processos inteligentes e Indústria 4.0.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-de-controle-e-automacao" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-lightning-charge"></i></div>
+                                <span class="badge bg-primary badge-custom">5 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Engenharia Elétrica</h4>
+                            <p class="text-muted mb-4">Sistemas de potência, energias renováveis, geração e distribuição de energia.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-eletrica" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-motherboard"></i></div>
+                                <span class="badge bg-primary badge-custom">5 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Engenharia Eletrônica</h4>
+                            <p class="text-muted mb-4">Microeletrônica, circuitos integrados, telecomunicações e instrumentação.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-eletronica" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-primary fs-2"><i class="bi bi-tools"></i></div>
+                                <span class="badge bg-primary badge-custom">5 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Engenharia Mecânica</h4>
+                            <p class="text-muted mb-4">Projetos mecânicos, setor automotivo, manutenção e sistemas térmicos.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-engenharia-mecanica" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-success fs-2"><i class="bi bi-laptop"></i></div>
+                                <span class="badge bg-success badge-custom">3 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Análise e Desenv. Sistemas</h4>
+                            <p class="text-muted mb-4">Tecnólogo prático focado em programação Web, Mobile e mercado de trabalho.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-tecnologia-em-analise-e-desenvolvimento-de-sistemas" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div class="icon-box text-info fs-2"><i class="bi bi-calculator"></i></div>
+                                <span class="badge bg-info text-dark badge-custom">4 Anos</span>
+                            </div>
+                            <h4 class="fw-bold mb-3">Matemática</h4>
+                            <p class="text-muted mb-4">Licenciatura para formar professores e pesquisadores com base sólida.</p>
+                            <a href="https://www.utfpr.edu.br/cursos/coordenacoes/graduacao/cornelio-procopio/cp-licenciatura-em-matematica" target="_blank" class="btn btn-outline-custom w-100 mt-auto btn-sm">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos de Extensão</h2>
+                <p class="text-muted fs-5">Conectando a universidade com a comunidade e o mercado através da prática.</p>
+            </div>
+
+            <div class="row g-4">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="bi bi-robot fs-4"></i>
+                                </div>
+                                <h4 class="fw-bold m-0 text-primary">Robótica Educacional</h4>
+                            </div>
+                            <hr class="opacity-25 my-3">
+                            <p class="text-muted small mb-4">
+                                Referência histórica no campus (projeto <em>Ninho de Pardais</em>), leva oficinas de lógica, montagem de robôs e pensamento computacional para alunos de escolas públicas da região.
+                            </p>
+                            <a href="https://www.utfpr.edu.br/campus/cornelioprocopio" target="_blank" class="btn btn-link text-decoration-none p-0 fw-bold text-dark small">
+                                Conhecer Grupo <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="bi bi-gender-female fs-4"></i>
+                                </div>
+                                <h4 class="fw-bold m-0 text-primary">Meninas Digitais</h4>
+                            </div>
+                            <hr class="opacity-25 my-3">
+                            <p class="text-muted small mb-4">
+                                Parceiro da Sociedade Brasileira de Computação (SBC). Promove a inclusão de mulheres na TI através de mentorias (Technovation Girls) e eventos como o "Café com Ciência".
+                            </p>
+                            <a href="https://meninas.sbc.org.br/projetos-parceiros/meninas-digitais-utfpr-cp/" target="_blank" class="btn btn-link text-decoration-none p-0 fw-bold text-dark small">
+                                Página Oficial <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="bi bi-film fs-4"></i>
+                                </div>
+                                <h4 class="fw-bold m-0 text-primary">Cine UTFPR</h4>
+                            </div>
+                            <hr class="opacity-25 my-3">
+                            <p class="text-muted small mb-4">
+                                Projeto cultural que promove sessões de cinema gratuitas no anfiteatro do campus, seguidas de debates acadêmicos para desenvolver o pensamento crítico dos alunos.
+                            </p>
+                            <a href="https://www.utfpr.edu.br/campus/cornelioprocopio/arte-e-cultura" target="_blank" class="btn btn-link text-decoration-none p-0 fw-bold text-dark small">
+                                Programação Cultural <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="bi bi-book fs-4"></i>
+                                </div>
+                                <h4 class="fw-bold m-0 text-primary">Apoio às Escolas Públicas</h4>
+                            </div>
+                            <hr class="opacity-25 my-3">
+                            <p class="text-muted small mb-4">
+                                Ações diretas de reforço escolar em Matemática e Física, executadas através do <strong>PIBID</strong> (Programa Institucional de Bolsa de Iniciação à Docência), onde licenciandos atuam na rede básica.
+                            </p>
+                            <a href="https://www.utfpr.edu.br/estrutura/grad/programas-1/pibid" target="_blank" class="btn btn-outline-custom btn-sm w-auto">
+                                Conhecer o PIBID
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="card-custom">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="bi bi-lightbulb fs-4"></i>
+                                </div>
+                                <h4 class="fw-bold m-0 text-primary">Lab de Inovação e Prototipagem</h4>
+                            </div>
+                            <hr class="opacity-25 my-3">
+                            <p class="text-muted small mb-4">
+                                Espaço integrado ao <strong>Hotel Tecnológico</strong> (Incubadora). Alunos utilizam impressão 3D e eletrônica para transformar ideias acadêmicas em startups reais e produtos comerciais.
+                            </p>
+                            <a href="https://cientech.md.utfpr.edu.br/hotel-tecnologico/" target="_blank" class="btn btn-outline-custom btn-sm w-auto">
+                                Acessar Incubadora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="vestibular" class="section-padding bg-cinza">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Ingressar</h2>
+                <p class="text-muted lead">Duas grandes oportunidades para garantir sua vaga.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card-custom p-4 border-top border-5 border-primary h-100">
+                        <div class="text-center mb-5">
+                            <h3 class="fw-bold text-primary">1. Via SISU / ENEM</h3>
+                            <p class="text-muted">Entrada simplificada usando sua nota.</p>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-circle bg-primary text-white">1</div>
+                            <div>
+                                <h5 class="fw-bold">Realize o ENEM</h5>
+                                <p class="text-muted small mb-0">Faça a prova nacional no final do ano.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-circle bg-primary text-white">2</div>
+                            <div>
+                                <h5 class="fw-bold">Inscreva-se no SISU</h5>
+                                <p class="text-muted small mb-0">Em janeiro, use sua nota e escolha a UTFPR.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-circle bg-primary text-white">3</div>
+                            <div>
+                                <h5 class="fw-bold">Matrícula Digital</h5>
+                                <p class="text-muted small mb-0">Acompanhe o resultado e matricule-se online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-custom p-4 border-top border-5 border-warning h-100">
+                        <div class="text-center mb-5">
+                            <h3 class="fw-bold text-dark">2. Vestibular UTFPR</h3>
+                            <p class="text-muted">Prova tradicional presencial.</p>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-circle">1</div>
+                            <div>
+                                <h5 class="fw-bold">Inscrição Online</h5>
+                                <p class="text-muted small mb-0">Cadastre-se no portal da UTFPR (Ago-Out).</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-circle">2</div>
+                            <div>
+                                <h5 class="fw-bold">Prova Presencial</h5>
+                                <p class="text-muted small mb-0">60 questões objetivas + Redação em um único dia.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-circle">3</div>
+                            <div>
+                                <h5 class="fw-bold">Aprovação Rápida</h5>
+                                <p class="text-muted small mb-0">Concorrência local e resultado ágil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://www.utfpr.edu.br/cursos/estudenautfpr" target="_blank" class="btn btn-outline-dark btn-lg px-5 py-3 fw-bold rounded-pill">Ver Editais Abertos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card-custom shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bold">Fale Conosco</h2>
+                                <p class="text-muted">Dúvidas? Mande uma mensagem.</p>
+                            </div>
+                            
+                            <form id="form-contato">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nome" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">E-mail</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold small text-uppercase text-muted">Assunto</label>
+                                    <select class="form-select" id="assunto">
+                                        <option>Sobre os Cursos</option>
+                                        <option>Dúvidas do Vestibular</option>
+                                        <option>Visitas ao Campus</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-dark fw-bold py-3 rounded-pill">ENVIAR MENSAGEM</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom">
+        <div class="container">
+            <h4 class="fw-bold text-white mb-2">UTFPR</h4>
+            <p class="mb-1">Universidade Tecnológica Federal do Paraná</p>
+            <small class="opacity-50">Câmpus Cornélio Procópio | © 2025</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
