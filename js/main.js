@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alternarBotoes(null)
         localStorage.removeItem("userData");
         localStorage.removeItem("sb-nwgcsdldnmihfullqlbs-auth-token");
+        window.location.reload();
     }
 
     btnSair.addEventListener('click', (e) => {
