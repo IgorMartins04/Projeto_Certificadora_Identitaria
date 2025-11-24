@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+</head>
+
+<body class="bg-body-secondary" style="margin: 0; padding: 0; box-sizing: border-box; height: 100vh;">
+
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+
+        <form action="" class="justify-content-center d-flex flex-column bg-light p-4 rounded w-25" id="form-login">
+
+            <h2 class="d-flex justify-content-center">LOGIN</h2>
+
+            <div class="mb-4 mt-4">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control p-2" id="email-login" placeholder="" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="passowrd" class="form-label">Senha</label>
+                <input type="password" class="form-control p-2" id="password-login" placeholder="" required>
+                <a href="#" id="switch-logon"
+                    class="d-flex justify-content-end text-decoration-none text-black mt-3 mb-3">Não possui uma conta
+                    ?</a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit"
+                    class="d-flex btn btn-primary mt-2 p-2 font-weight-bold border-0 justify-content-center w-50"
+                    id="submit-login">
+                    Entrar
+                </button>
+            </div>
+        </form>
+
+        <form action="" class="justify-content-center d-flex flex-column bg-light p-4 rounded w-25 d-none"
+            id="form-logon">
+
+            <h2 class="d-flex justify-content-center mt-3">CRIAR CONTA</h2>
+
+            <div class="mb-3 mt-3">
+                <label for="name-logo" class="form-label">Nome </label>
+                <input type="text" class="form-control" id="name-logon" placeholder="" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email-logon" class="form-label">Email </label>
+                <input type="email" class="form-control" id="email-logon" placeholder="" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password-logon" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password-logon" placeholder="" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password-confirm-logon" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" id="password-confirm-logon" placeholder="" required>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2">
+                <button type="submit"
+                    class="d-flex btn btn-primary mt-2 p-2 font-weight-bold border-0 justify-content-center w-50"
+                    id="back-window">
+                    Voltar
+                </button>
+                <button type="submit"
+                    class="d-flex btn btn-primary mt-2 p-2 font-weight-bold border-0 justify-content-center w-50"
+                    id="submit-logon">
+                    Criar
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script> toastr.options = {
+            closeButton: true,
+            progressBar: true,
+            positionClass: "toast-bottom-right",
+            timeOut: "3000",
+        };
+    </script>
+    <script src="../js/login.js" type="module"></script>
+</body>
+
+</html>
