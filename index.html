@@ -12,7 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -51,11 +54,51 @@
               <a class="nav-link" href="#contato">Fale Conosco</a>
             </li>
 
+            <li class="nav-item dropdown" id="admin-dropdown-li">
+              <a
+                class="nav-link dropdown-toggle d-none"
+                href="#"
+                id="admin-dropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admin
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="admin-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-target="#novo-projeto"
+                    data-bs-toggle="modal"
+                    >Criar novo projeto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-target="#novo-curso"
+                    data-bs-toggle="modal"
+                    >Criar novo curso</a
+                  >
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item ms-lg-3 mt-3 mt-lg-0" id="login">
               <a
                 class="btn-nav-dark text-decoration-none"
                 href="register/login.html"
                 >Entrar</a
+              >
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0 d-none" id="sair">
+              <a
+                class="btn-nav-dark text-decoration-none"
+                href="#"
+                >Sair</a
               >
             </li>
           </ul>
@@ -458,7 +501,7 @@
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4" id="adicionar-projetos">
           <div class="col-lg-4 col-md-6">
             <div class="card-custom">
               <div class="card-body">
@@ -797,6 +840,78 @@
       </div>
     </footer>
 
+    <div class="modal fade" tabindex="-1" id="novo-projeto">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Criar novo projeto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="tituloProjeto">Titulo do Projeto</label>
+              <input
+                type="text"
+                class="form-control w-100"
+                id="tituloProjeto"
+                placeholder="Meninas Digitais"
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="descricaoProjeto">Descrição do Projeto</label>
+              <input
+                type="text"
+                class="form-control w-100"
+                id="descricaoProjeto"
+                placeholder="Um projeto sobre jovens..."
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="linkRedirecionamento"
+                >Link Para Redirecionamento</label
+              >
+              <input
+                type="text"
+                class="form-control w-100"
+                id="linkRedirecionamento"
+                placeholder="https://github.com/IgorMartins04/..."
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="statusProjeto">Status do Projeto</label>
+              <select class="form-select w-100" id="statusProjeto">
+                <option value="true" selected>Ativo</option>
+                <option value="false">Inativo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary text-white"
+              data-bs-dismiss="modal"
+              id="cancelar-projeto"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-success text-white" id="criar-projeto">
+              Salvar Projeto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
@@ -811,3 +926,86 @@
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
+
+    <div class="modal fade" tabindex="-1" id="novo-curso">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Criar novo curso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="tituloCurso">Titulo do Curso</label>
+              <input
+                type="text"
+                class="form-control w-100"
+                id="tituloCurso"
+                placeholder="Engenharia de Software"
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="descricaoCurso">Descrição do Curso</label>
+              <input
+                type="text"
+                class="form-control w-100"
+                id="descricaoCurso"
+                placeholder="Um curso sobre..."
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="linkCurso"
+                >Link Para Redirecionamento</label
+              >
+              <input
+                type="text"
+                class="form-control w-100"
+                id="linkCurso"
+                placeholder="https://www.utfpr.edu.br/cursos/..."
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="tempoCurso">Tempo de Duração (Anos)</label>
+              <input
+                type="number"
+                class="form-control w-100"
+                id="tempoCurso"
+                placeholder="4"
+                min="1"
+              />
+            </div>
+
+            <div class="input-group mb-3 flex-column w-100">
+              <label for="statusCurso">Status do Curso</label>
+              <select class="form-select w-100" id="statusCurso">
+                <option value="true" selected>Ativo</option>
+                <option value="false">Inativo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary text-white"
+              data-bs-dismiss="modal"
+              id="cancelar-curso"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-success text-white" id="criar-curso">
+              Salvar Curso
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
