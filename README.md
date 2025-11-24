@@ -72,8 +72,7 @@ Projeto acadêmico da disciplina Certificadora de Competência Identitária, ori
         - **Testar visualização em diferentes tamanhos**
             - Abrir no celular ou modo responsivo do navegador.
             - Verificar se o layout permanece organizado.
-    - Contas de Acesso padrão para iniciar o uso do sistema.
-        
+    - Contas de Acesso admin para iniciar o uso do sistema com funcionalidades administrativas do sistema.
         usuario admin
         admin@email.com
         12345678
