@@ -318,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
     async function criarDuvida() {
         const nomeValor = inputNome.value;
         const emailValor = inputEmail.value;
